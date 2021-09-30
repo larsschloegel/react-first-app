@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import useFetch from "react-fetch-hook";
+import CharacterCard from "./CharacterCard";
 
 export default function Fetch() {
     const { isLoading, error, data } = useFetch("https://randomuser.me/api");
