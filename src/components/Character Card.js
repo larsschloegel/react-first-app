@@ -1,4 +1,7 @@
-export default function RickAndMortyData() {
+
+
+export default function CharacterCard(props) {
+
     const getRequest = () => {
         return fetch("https://rickandmortyapi.com/api/character")
             .then(response => {
@@ -9,5 +12,9 @@ export default function RickAndMortyData() {
             })
             .catch((error) => console.error(error))
     }
-    //console.log(getRequest().then((data) => data.results))
+    return (
+        <body className="character">
+             <h1 className="header__title"> Rick and Morty Gallery</h1>
+        </body>
+    )
 }
